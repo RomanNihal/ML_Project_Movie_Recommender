@@ -4,7 +4,7 @@ import pickle
 import requests
 
 st.title('Movie Recommender System')
-movies = pickle.load(open('movies.pkl','rb'))
+movies = pickle.load(open('movies_title.pkl','rb'))
 similarity = pickle.load(open('movies_similarity.pkl', 'rb'))
 
 def fetch_poster(movie_id):
